@@ -14,7 +14,7 @@ def index(request):
 
 
 def about(request):
-    team = Realtor.objects.all()
+    team = Realtor.objects.order_by('-hire_date')
     mvp = Realtor.objects.get(is_mvp=True)
 
     context = {
