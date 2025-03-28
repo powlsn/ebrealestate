@@ -15,7 +15,7 @@ def index(request):
         'bedroom_choices': bedroom_choices,
     }
 
-    return render(request, 'pages/index.html', context)
+    return render(request, 'pages/home.html', context)
 
 
 def about(request):
