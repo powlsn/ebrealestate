@@ -26,6 +26,15 @@
                     {% endif %}
                     href="{% url 'about' %}">About</a>
                 </li>
+                <li class="nav-item mr-3">
+                    <a 
+                    {% if 'listings' in request.path %}
+                        class="nav-link active" 
+                    {% else %}
+                        class="nav-link" 
+                    {% endif %}
+                    href="{% url 'listings' %}">Listings</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
