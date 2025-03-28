@@ -1,12 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EB Real Estate</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <!-- BOOTSTAP -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    <!-- Top Bar -->
+    <!-- {% include 'partials/_topbar.html' %} -->
+    {% include 'partials/_navbar.html' %}
     {% block content %}
-    {% endblock %}    
+    {% endblock %}
+    {% include 'partials/_footer.html' %}
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

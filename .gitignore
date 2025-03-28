@@ -8,5 +8,5 @@ db.sqlite3
 media
 
 venv
-/static
-/media
+app/static
+app/media
