@@ -149,21 +149,19 @@
               <h6 class="text-secondary">{{ listing.realtor.name }}</h6>
             </div>
           </div>
-          <button class="btn-primary btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">Make An Inquiry</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inquiryModal">Make An Inquiry</button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Inquiry Modal -->
-  <div class="modal fade" id="inquiryModal" role="dialog">
+  <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="inquiryModalLabel">Make An Inquiry</h5>
-          <button type="button" class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form>

@@ -8,7 +8,6 @@ function ready(fn) {
 
 ready(
     () => {
-        console.log('hello world!');
         const date = new Date();
         document.querySelector('.year').innerHTML = date.getFullYear();
     }
